@@ -1,7 +1,7 @@
 include_recipe "apt"
 include_recipe "build-essential"
 
-%w( wget zlib1g-dev libssl-dev libffi-dev libxslt-dev libxml2-dev ).each do |pkg|
+%w( wget zlib1g-dev libssl-dev libffi-dev libxslt-dev libxml2-dev libncurses5-dev libreadline5-dev ).each do |pkg|
   package pkg do
     action :install
   end
