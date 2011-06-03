@@ -8,6 +8,12 @@ Installs Ruby 1.9.x from source.
 RVM in conjunction with Chef is shit.
 
 
+## Cookbook Requirements
+
+* apt
+* build-essential
+
+
 ## Attributes
 
 * `ruby/version`: string containing the ruby version you want to install.
