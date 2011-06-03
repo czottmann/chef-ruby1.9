@@ -1,0 +1,26 @@
+# chef-ruby1.9
+
+Installs Ruby 1.9.x from source.
+
+
+## Acknowledgements
+
+RVM in conjunction with Chef is shit.
+
+
+## Attributes
+
+* `ruby/version`: string containing the ruby version you want to install.
+  Default: "1.9.2-p180"
+
+
+## Recipes
+
+* `ruby1.9`: installs Ruby from source.
+
+
+## Legal
+
+* Written by [Carlo Zottmann](http://github.com/carlo/)
+* Liability in case of anything: definitely not me.
+* License: [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
