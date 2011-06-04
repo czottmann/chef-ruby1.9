@@ -4,7 +4,9 @@ include_recipe "build-essential"
 ruby_installed_check = "ruby -v | grep #{ node[:ruby][:version].gsub( '-', '' ) }"
 
 %w( wget zlib1g-dev libssl-dev libffi-dev libxml2-dev libncurses5-dev libreadline5-dev ).each do |pkg|
-  package pkg { action :install }
+  package pkg do
+    action :install
+  end
 end
 
 execute "get & unpack #{ node[:ruby][:version] }" do
@@ -28,5 +30,7 @@ end
 end
 
 %w( ohai chef ).each do |g|
-  gem_package g { action :install }
+  gem_package g do
+    action :install
+  end
 end
