@@ -32,5 +32,6 @@ end
 %w( ohai chef ).each do |g|
   gem_package g do
     action :install
+    gem_binary('/usr/local/bin/gem')
   end
 end
