@@ -2,31 +2,29 @@
 
 Installs Ruby 1.9.x from source.
 
-
-## Acknowledgements
+# Acknowledgements
 
 RVM in conjunction with Chef is shit.
 
-
-## Cookbook Requirements
+# Cookbook Requirements
 
 * apt
 * build-essential
 
-
-## Attributes
+# Attributes
 
 * `ruby/version`: string containing the ruby version you want to install.
   Default: "1.9.2-p180"
 
+# Recipes
 
-## Recipes
+## default
 
-* `ruby1.9`: installs Ruby from source.
-
+installs Ruby from source.
 
 ## Legal
 
 * Written by [Carlo Zottmann](http://github.com/carlo/)
 * Liability in case of anything: definitely not me.
 * License: [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
+* This version of the README was edited by [Hilary Holz](http://github.com/hilary/) on her update, don't blame Carlo
