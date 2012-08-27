@@ -1,7 +1,7 @@
 {
   "name": "ruby-chef1.9",
   "description": "Installs Ruby 1.9.x from source",
-  "long_description": "Install Ruby 1.9.x from source depending only on recipes apt and build-essential",
+  "long_description": "",
   "maintainer": "Carlo Zottmann",
   "maintainer_email": "carlo@zottmann.org",
   "license": "WTFPL",
