@@ -1,28 +1,49 @@
 # chef-ruby1.9
 
-Installs Ruby 1.9.x from source.
+## Description
 
-# Acknowledgements
+Chef cookbook to install Ruby 1.9.x from source on ubuntu.
 
-RVM in conjunction with Chef is shit.
+## Motivation
 
-# Cookbook Requirements
+A simple way to install Ruby 1.9.x without using RVM, rbenv, etc., wonderful
+as those may be.
 
-* apt
-* build-essential
+## Alternatives
 
-# Attributes
-
-* `ruby/version`: string containing the ruby version you want to install.
-  Default: "1.9.2-p180"
+Fletcher Nichol's [ruby_build cookbook](http://community.opscode.com/cookbooks/ruby_build) 
 
 # Recipes
 
 ## default
 
-installs Ruby from source.
+Installs Ruby 1.9.x from source. Installs 1.9.2-p180 by default,
+unless overridden in your node.json
 
-## Legal
+# Details
+
+## Cookbook Dependencies
+
+* apt
+* build-essential
+
+(both from opscode community site)
+
+## Attributes
+
+* `ruby/version`: string containing the ruby version you want to install.
+  Default: "1.9.2-p180"
+
+## Issues
+
+[Librarian-chef](https://github.com/applicationsonline/librarian) is
+unhappy with the cookbook for some
+reason. [Berkshelf](http://berkshelf.com/), on the other hand, uses it
+without complaint. As Berkshelf appeals to my design sense, I chose
+not to spend more time trying to divine what was making Librarian-chef
+choke.
+
+# Legal
 
 * Written by [Carlo Zottmann](http://github.com/carlo/)
 * Liability in case of anything: definitely not me.
