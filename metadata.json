@@ -1,0 +1,33 @@
+{
+  "name": "ruby-chef1.9",
+  "description": "Installs Ruby 1.9.x from source",
+  "long_description": "",
+  "maintainer": "Carlo Zottmann",
+  "maintainer_email": "carlo@zottmann.org",
+  "license": "WTFPL",
+  "platforms": { 
+    "ubuntu" : ">= 0.0.0" 
+  },
+  "dependencies": {
+    "apt": ">= 0.0.0",
+    "build-essential": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  }
+  "groupings": {
+  },
+  "recipes": {
+    "chef-ruby1.9": "Installs Ruby 1.9.x (default: 1.9.2) from source." 
+  },
+  "version": "1.0"
+}
